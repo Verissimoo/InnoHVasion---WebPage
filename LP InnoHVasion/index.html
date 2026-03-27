@@ -302,11 +302,11 @@
       color: rgba(247,247,251,0.94);
     }
 
-    .timeline { position: relative; display: grid; gap: 18px; padding-left: 52px; }
-    .timeline::before { content: ""; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, rgba(0,255,106,0.9), rgba(124,58,237,0.16)); }
-    .timeline-item { position: relative; padding: 0; }
-    .timeline-item::before { content: attr(data-step); position: absolute; left: -52px; top: 0; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary); background: #130e25; border: 2px solid rgba(0,255,106,0.55); box-shadow: 0 0 18px rgba(0,255,106,0.14); }
-    .timeline-item h3 { margin: 0 0 6px; font-size: 1.12rem; }
+.timeline { position: relative; display: grid; gap: 18px; padding-left: 60px; }
+.timeline::before { content: ""; position: absolute; left: 21px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, rgba(0,255,106,0.9), rgba(124,58,237,0.16)); }
+.timeline-item { position: relative; padding: 0; }
+.timeline-item::before { content: attr(data-step); position: absolute; left: -60px; top: 0; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary); background: #130e25; border: 2px solid rgba(0,255,106,0.55); box-shadow: 0 0 18px rgba(0,255,106,0.14); }
+.timeline-item h3 { margin: 8px 0 6px; font-size: 1.12rem; }
 
     .final-cta { overflow: hidden; }
     .final-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 20% 20%, rgba(0,255,106,0.16), transparent 30%), radial-gradient(circle at 80% 30%, rgba(124,58,237,0.28), transparent 30%); pointer-events: none; }
@@ -322,7 +322,7 @@
     .footer-brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 0px;
     }
     .footer-brand img {
       display: block;
@@ -340,13 +340,15 @@
     }
     .footer-brand strong { display: block; color: var(--text); line-height: 1; }
     .footer-brand span { display: block; color: var(--muted); font-size: 0.88rem; line-height: 1.2; }
-    .footer-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--text);
-      font-weight: 600;
-    }
+  .footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text);
+  font-weight: 600;
+  padding: 6px 0;
+  padding-left: 18px; /* adicione esta linha */
+}
     .footer-link img {
       width: 20px;
       height: 20px;
@@ -367,7 +369,6 @@
       .final-cta .actions { width: 100%; }
       .final-cta .cta { width: 100%; min-width: unset; }
       .hero-copy h1 { font-size: 2rem; letter-spacing: -0.03em; }
-      .timeline { padding-left: 28px; }
     }
 
     @media (min-width: 720px) {
@@ -406,7 +407,7 @@
         <a href="#case">Case real</a>
         <a href="#integracoes">Integrações</a>
       </div>
-      <a class="cta" href="https://wa.me/5561991193717" target="_blank" rel="noopener noreferrer">Quero um diagnóstico grátis</a>
+      <a class="cta" href="https://wa.me/5561991193717?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20automatizar%20minha%20opera%C3%A7%C3%A3o.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">Quero um diagnóstico grátis</a>
     </div>
   </nav>
 
@@ -420,7 +421,7 @@
             A InnoHVasion implanta automações e agentes de IA que eliminam tarefas repetitivas, padronizam processos críticos e devolvem o seu tempo para o que realmente faz o negócio crescer.
           </p>
           <div class="hero-actions">
-            <a class="cta" href="https://wa.me/5561991193717" target="_blank" rel="noopener noreferrer">Quero um diagnóstico grátis</a>
+            <a class="cta" href="https://wa.me/5561991193717?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20automatizar%20minha%20opera%C3%A7%C3%A3o.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">Quero um diagnóstico grátis</a>
             <a class="cta-outline" href="#case">Ver resultado real</a>
           </div>
           <div class="hero-points">
@@ -452,7 +453,7 @@
         <div class="section-head reveal">
           <span class="eyebrow">Para quem é</span>
           <h2>Para quem já tentou controlar tudo na mão e sabe o custo disso</h2>
-          <p>Equipe no limite, tarefas caindo no esquecimento, retrabalho toda semana. Isso não é falta de esforço — é falta de estrutura automatizada.</p>
+          <p>Equipe no limite, tarefas caindo no esquecimento, retrabalho toda semana. Isso não é falta de esforço, é falta de estrutura automatizada.</p>
         </div>
 
         <div class="card pain-card reveal">
@@ -460,7 +461,7 @@
             <div>
               <h3>Dores mais comuns</h3>
               <ul class="list">
-                <li>Mensagens repetidas no WhatsApp todo dia — respondidas sempre pela mesma pessoa</li>
+                <li>Mensagens repetidas no WhatsApp todo dia, respondidas sempre pela mesma pessoa</li>
                 <li>Cobranças que dependem de alguém lembrar de enviar</li>
                 <li>Planilhas que "funcionam" até o dia que param de funcionar</li>
                 <li>Ninguém sabe o status de um pedido sem perguntar pra alguém</li>
@@ -470,7 +471,7 @@
             <div>
               <h3>Perfil ideal</h3>
               <p>
-                Dono ou dona de micro ou pequena empresa. Você já tem operação rodando, mas sente que o crescimento depende de você estar presente em tudo — ou de confiar que alguém vai lembrar. Isso muda com automação.
+                Dono ou dona de micro ou pequena empresa. Você já tem operação rodando, mas sente que o crescimento depende de você estar presente em tudo, ou de confiar que alguém vai lembrar. Isso muda com automação.
               </p>
             </div>
           </div>
@@ -490,7 +491,7 @@
           <article class="card reveal">
             <span class="deliverable-tag">AI</span>
             <h3>Automações e agentes de IA sob medida</h3>
-            <p>Fluxos construídos na sua regra de negócio — WhatsApp, e-mail, planilhas, ERPs, CRMs e APIs.</p>
+            <p>Fluxos construídos na sua regra de negócio: WhatsApp, e-mail, planilhas, ERPs, CRMs e APIs.</p>
           </article>
           <article class="card reveal">
             <span class="deliverable-tag">OPS</span>
@@ -533,7 +534,7 @@
           <article class="card step-card reveal">
             <span class="step-number">3</span>
             <h3>Evolução contínua</h3>
-            <p>Monitoramos, ajustamos e expandimos. A operação fica mais robusta a cada ciclo — sem precisar reiniciar do zero.</p>
+            <p>Monitoramos, ajustamos e expandimos. A operação fica mais robusta a cada ciclo, sem precisar reiniciar do zero.</p>
           </article>
         </div>
 
@@ -575,7 +576,7 @@
           </article>
         </div>
 
-        <p class="case-note reveal">Esses números não são projeção. São execuções reais, rastreadas e documentadas — disponíveis para auditoria a qualquer momento.</p>
+        <p class="case-note reveal">Esses números não são projeção. São execuções reais, rastreadas e documentadas disponíveis para auditoria a qualquer momento.</p>
 
       </div>
     </section>
@@ -592,8 +593,8 @@
           <article class="card compare-card before reveal">
             <h3>Antes</h3>
             <div class="compare-list">
-              <div class="compare-item"><span class="dot">×</span><span>Financeiro na mão — parcelas esquecidas, cobranças atrasadas, prejuízo silencioso</span></div>
-              <div class="compare-item"><span class="dot">×</span><span>Sem jornada do cliente — pós-venda, confirmações e follow-ups dependem de memória</span></div>
+              <div class="compare-item"><span class="dot">×</span><span>Financeiro na mão, parcelas esquecidas, cobranças atrasadas, prejuízo silencioso</span></div>
+              <div class="compare-item"><span class="dot">×</span><span>Sem jornada do cliente, pós-venda, confirmações e follow-ups dependem de memória</span></div>
               <div class="compare-item"><span class="dot">×</span><span>Status de pedido espalhado entre WhatsApp, planilha e cabeça da equipe</span></div>
               <div class="compare-item"><span class="dot">×</span><span>Suporte lento, inconsistente e dependente de quem está disponível</span></div>
             </div>
@@ -605,7 +606,7 @@
               <div class="compare-item"><span class="dot">✓</span><span>Relatórios e cobranças automáticos, com logs e rastreabilidade completa</span></div>
               <div class="compare-item"><span class="dot">✓</span><span>Jornada do cliente ativa: pré-venda, confirmação, pós-venda e relacionamento no piloto automático</span></div>
               <div class="compare-item"><span class="dot">✓</span><span>Um lugar centralizado com status, histórico e alertas de exceção</span></div>
-              <div class="compare-item"><span class="dot">✓</span><span>Atendimento padronizado com IA respondendo 24h — sem sobrecarregar equipe</span></div>
+              <div class="compare-item"><span class="dot">✓</span><span>Atendimento padronizado com IA respondendo 24h sem sobrecarregar equipe</span></div>
             </div>
           </article>
         </div>
@@ -617,7 +618,7 @@
         <div class="section-head reveal">
           <span class="eyebrow">Integrações</span>
           <h2>Integramos com o que você já usa.</h2>
-          <p>Não precisa trocar de sistema. Se tem API, webhook ou acesso a dados — a InnoHVasion conecta.</p>
+          <p>Não precisa trocar de sistema. Se tem API, webhook ou acesso a dados, a InnoHVasion conecta.</p>
         </div>
 
         <div class="integration-grid">
@@ -690,10 +691,10 @@
             <h2 style="margin: 16px 0 12px; font-size: clamp(1.9rem, 4vw, 3.5rem); line-height: 1.03;">
               Quanto tempo e dinheiro a sua operação perde toda semana por falta de automação?
             </h2>
-            <p>A resposta está no diagnóstico. Em 30 a 60 minutos, a InnoHVasion mapeia os seus gargalos e mostra onde a automação entrega retorno mais rápido — sem compromisso.</p>
+            <p>A resposta está no diagnóstico. Em 30 a 60 minutos, a InnoHVasion mapeia os seus gargalos e mostra onde a automação entrega retorno mais rápido sem compromisso.</p>
           </div>
           <div class="actions">
-            <a class="cta" style="min-width: 260px; min-height: 60px; font-size: 1rem;" href="https://wa.me/5561991193717" target="_blank" rel="noopener noreferrer">
+            <a class="cta" style="min-width: 260px; min-height: 60px; font-size: 1rem;" href="https://wa.me/5561991193717?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20automatizar%20minha%20opera%C3%A7%C3%A3o.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">
               Quero meu diagnóstico gratuito
             </a>
           </div>
